@@ -1,0 +1,144 @@
+.card {
+  box-shadow: 0 0 20px #3333;
+  padding: 24px;
+  border-radius: 20px;
+
+  h1 {
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.form {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.image {
+  width: 100%;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 8px;
+}
+
+.hashtags {
+  font-size: 12px;
+  color: #777;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  margin: 0 0 8px;
+
+  span {
+    padding-right: 0.63em;
+    cursor: pointer;
+
+    &:hover {
+      color: #8fdc32;
+    }
+
+    &::before {
+      content: "#";
+      color: #49afc2;
+      opacity: 0.5;
+      vertical-align: middle;
+      display: inline-block;
+      padding-right: 1px;
+    }
+
+    &:nth-child(3n+2)::before {
+      color: #3A88C4;
+    }
+
+    &:nth-child(3n+3)::before {
+      color: #9F439A;
+    }
+  }
+}
+
+.meta {
+  font-size: 12px;
+  color: #333;
+  margin: 0 0 8px;
+
+  span {
+    padding-right: 20px;
+    cursor: pointer;
+  }
+
+  strong {
+    font-weight: 300;
+    color: #3A88C4;
+    border-radius: 20px;
+    display: inline-block;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &::after {
+      content: " →";
+      display: inline-block;
+      transform: translateX(3px) translateY(1px);
+    }
+  }
+}
+
+.input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.label {
+  font-size: 12px;
+  margin-top: 16px;
+  display: block; 
+
+  &::after {
+    content: ":";
+  }
+}
+
+.button {
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  margin: 16px 0;
+  background-color: #8fdc32;
+  color: white;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 14px;
+}
+
+.column {
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .label, h2 {
+    width: 100%;
+    display: block;
+  }
+}

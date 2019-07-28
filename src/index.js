@@ -1,12 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import { addLocaleData, IntlProvider } from "react-intl";
+import plLocaleData from "react-intl/locale-data/pl";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// import pl from "./translations/pl.json";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import Layout from "./components/Layout/Layout";
+import Router from "./Router";
+
+addLocaleData(plLocaleData);
+
+ReactDOM.render(
+  // <IntlProvider locale="pl" messages={pl}>
+  <IntlProvider locale="en">
+    <Layout>
+      <Router />
+    </Layout>
+  </IntlProvider>,
+  document.getElementById("root")
+);

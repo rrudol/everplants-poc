@@ -1,0 +1,10 @@
+{
+  "app.menu.my-plants": "moje rośliny",
+  "app.menu.add-new-plant": "dodaj nową roślinę",
+  "app.menu.logout": "wyloguj",
+  "app.menu.sign-in": "zaloguj",
+  "react-intl-formatted-duration.daysUnit": "{value, plural, one {dzień} other {dni}}",
+  "app.plants.needs-water-every": "Potrzebuje wody co {time}",
+  "app.plants.next-watering": "Następne podlewanie za {time}",
+  "app.plants.needs-water": "Potrzebuje wody!"
+}

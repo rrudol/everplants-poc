@@ -1,0 +1,50 @@
+.menuWrapper {
+  display: flex;
+
+  a {
+    text-decoration: none;
+    color: #3A88C4;
+    margin: 0 5px;
+    padding: 5px;
+    border-bottom: 1px solid #49afc200;
+    transition: 0.2s border-bottom;
+    font-weight: 400;
+    text-transform: lowercase;
+
+    &:hover {
+      color: #8fdc32;
+      border-bottom: 2px solid #8fdc32ff;
+    }
+  }
+}
+
+.menu {
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
+}
+
+.menuMobile {
+  @media only screen and (min-width: 700px) {
+    display: none;
+  }
+
+  div {
+    width: 1.8em;
+    height: 4px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
+  
+  div:nth-child(1) {
+    background: #3A88C4;
+  }
+
+  div:nth-child(2) {
+    background: #49afc2;
+  }
+
+  div:nth-child(3) {
+    background: #8fdc32;
+  }
+}
